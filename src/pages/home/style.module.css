@@ -1,0 +1,45 @@
+
+
+.container
+{
+    max-width:1080px;
+    margin:0px auto;
+}
+
+.sobreTerapia
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    margin-top:100px;
+    
+}
+
+.left
+{
+    width:35%;
+}
+
+.disertacao
+{
+    width:40%;
+}
+
+.disertacao h1
+{
+    max-width: 325px;
+}
+
+@media (max-width:720px)
+{
+    .disertacao
+    {
+        width:100%;
+    }
+
+    .sobreTerapia
+    {
+        margin-top:20px;
+        flex-direction:column;
+    }
+}

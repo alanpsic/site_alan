@@ -1,0 +1,68 @@
+
+
+*{
+    color:#2E2E2E;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container
+{
+    display:flex;
+    margin:150px 0px 25px 0px;
+    justify-content:space-between;
+    align-itens:center;
+    gap:50px;
+}
+
+.sobreMim
+{
+    width:50%;
+}
+
+.personaImg
+{
+    display:flex;
+    align-itens:center;
+    justify-content:center;
+    //margin:30px;
+}
+
+.personaImg img
+{
+    width:200px;
+    height:200px;
+    display:block;
+    border-radius:50%;
+}
+
+@media (max-width:720px)
+{
+
+    .container
+    {
+        display:flex;
+        margin:25px 0px 25px 0px;
+        flex-direction:column;
+        justify-content:center;
+        align-itens:center;
+        gap:50px;
+    }
+
+    .sobreMim
+    {
+        width:100%;
+    }
+
+    .personaImg img
+    {
+        width:80%;
+        height:80%;
+        display:block;
+        border-radius:50%;
+    }
+}
