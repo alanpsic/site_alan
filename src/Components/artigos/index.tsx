@@ -3,6 +3,7 @@
 import style from "./style.module.css"
 import saudeImg from "../../images/Artigos/SaudImg.jpg"
 import { Link } from "react-router-dom"
+import { primeiroArtigo, segundoArtigo, terceiroArtigo } from "../../pages/artigo"
 
 export function Artigos()
 {
@@ -16,10 +17,10 @@ export function Artigos()
                     <img src={saudeImg} alt="" />
 
                     <div className={style.cardContent}>
-                        <h3>Saude Mental</h3>
+                        <h3>{ primeiroArtigo.tema }</h3>
 
-                        <p>A saúde mental é o alicerce silencioso da nossa existência. Ela não se resume à ausência de doenças, mas à capacidade de lidar com emoções, enfrentar desafios, </p>
-                        <Link className={style.link} to=""> Leia mais... </Link>
+                        <p>{ primeiroArtigo.texto_simplificado } </p>
+                        <Link className={style.link} to="/artigo/tema_1"> Leia mais... </Link>
                     </div>
                 </div>
 
@@ -28,10 +29,10 @@ export function Artigos()
                     <img src={saudeImg} alt="" />
 
                     <div className={style.cardContent}>
-                        <h3>Saude Mental</h3>
+                        <h3>{ segundoArtigo.tema }</h3>
 
-                        <p>A saúde mental é o alicerce silencioso da nossa existência. Ela não se resume à ausência de doenças, mas à capacidade de lidar com emoções, enfrentar desafios, cultivar relações saudáveis e encontrar sentido na vida. Em um mundo acelerado, cuidar da mente é tão essencial quanto cuidar do corpo.</p>
-                        <Link className={style.link} to=""> Leia mais... </Link>
+                        <p>{ segundoArtigo.texto_simplificado }</p>
+                        <Link className={style.link} to="/artigo/tema_2"> Leia mais... </Link>
                     </div>
                 </div>
 
@@ -40,12 +41,12 @@ export function Artigos()
                     <img src={saudeImg} alt="" />
 
                     <div className={style.cardContent}>
-                        <h3>Saude Mental</h3>
+                        <h3>{ terceiroArtigo.tema }</h3>
 
-                        <p>A saúde mental é o alicerce silencioso da nossa existência. Ela não se resume à ausência de doenças, mas à capacidade de lidar com emoções, enfrentar desafios.</p>
-                        <Link className={style.link} to=""> Leia mais... </Link>
+                        <p>{ terceiroArtigo.texto_simplificado }</p>
+                        <Link className={style.link} to="/artigo/tema_3"> Leia mais... </Link>
                     </div>
-                </div>'
+                </div>
             </div>
             
 
