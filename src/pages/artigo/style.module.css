@@ -56,6 +56,11 @@
         width:100%;
     }
 
+    .artigo img
+    {
+        width:100%;
+    }
+
     .artigoImgMovel
     {
         display:block;
@@ -68,6 +73,7 @@
 
     .artigoImg
     {
+        width:90%;
         display:none;
     }
 }
