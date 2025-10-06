@@ -72,6 +72,10 @@ export function Artigo()
             <div className={style.head}><Link className={style.artigoLink} to="/">Home</Link></div>
             <div className={style.artigo}>
                
+                <div className={style.artigoImgMovel}>
+                    <img src={artigo?.imagem} alt="" />
+                </div>
+
                <div className={style.artigoTxt}>
                     <h1>{ artigo ? artigo.tema : ""}</h1>
                     { artigo && artigo.texto.map((item, index)=>(

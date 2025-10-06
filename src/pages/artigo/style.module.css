@@ -13,6 +13,11 @@
     margin-bottom:50px;
 }
 
+.artigoImgMovel
+{
+    display:none;
+}
+
 .artigoTxt
 {
     width:50%;
@@ -47,6 +52,22 @@
 {
     .artigo
     {
-       width:100%;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .artigoImgMovel
+    {
+        display:block;
+    }
+
+    .artigoTxt
+    {
+        width:100%;
+    }
+
+    .artigoImg
+    {
+        display:none;
     }
 }
