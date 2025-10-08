@@ -12,7 +12,7 @@ export function Artigos()
             <h1>Artigos em Destaque</h1>
 
             <div className={style.cardsContainer}>
-                <div className={style.card}>
+                {/*<div className={style.card}>
                 
                     <img src={saudeImg} alt="" />
 
@@ -22,11 +22,11 @@ export function Artigos()
                         <p>{ primeiroArtigo.texto_simplificado } </p>
                         <Link className={style.link} to="/artigo/tema_1"> Leia mais... </Link>
                     </div>
-                </div>
+                </div>*/}
 
                 <div className={style.card}>
                     
-                    <img src={saudeImg} alt="" />
+                    <img src={segundoArtigo.imagem} alt="" />
 
                     <div className={style.cardContent}>
                         <h3>{ segundoArtigo.tema }</h3>
@@ -36,7 +36,7 @@ export function Artigos()
                     </div>
                 </div>
 
-                <div className={style.card}>
+                {/*<div className={style.card}>
                     
                     <img src={saudeImg} alt="" />
 
@@ -46,7 +46,7 @@ export function Artigos()
                         <p>{ terceiroArtigo.texto_simplificado }</p>
                         <Link className={style.link} to="/artigo/tema_3"> Leia mais... </Link>
                     </div>
-                </div>
+                </div>*/}
             </div>
             
 
