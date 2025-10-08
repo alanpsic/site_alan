@@ -1,9 +1,9 @@
 
 
 import style from "./style.module.css"
-import saudeImg from "../../images/Artigos/SaudImg.jpg"
+//import saudeImg from "../../images/Artigos/SaudImg.jpg"
 import { Link } from "react-router-dom"
-import { primeiroArtigo, segundoArtigo, terceiroArtigo } from "../../pages/artigo"
+import { segundoArtigo } from "../../pages/artigo"
 
 export function Artigos()
 {
