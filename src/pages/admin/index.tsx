@@ -12,10 +12,10 @@ export function Admin()
     const [content, setContent] = useState('');
     const [tema, setTema] = useState("");
 
-    function handleSetTema(tema: string)
+    /*function handleSetTema(tema: string)
     {
         setTema(tema);
-    }
+    }*/
 
     function handleSubmmit(e: FormEvent)
     {

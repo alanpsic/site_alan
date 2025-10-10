@@ -82,8 +82,6 @@ export function Artigo()
 
     const novoTema = tema != undefined ? tema : "";
 
-    const voltarText = "<<< Voltar";
-
     useEffect(()=>{
         handleCheckTema(novoTema);
     },[])
