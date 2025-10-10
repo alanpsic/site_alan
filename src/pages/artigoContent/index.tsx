@@ -15,6 +15,7 @@ export function ArtigoContent({tema, texto, imagem}: ArtigoData)
 {
 
     const voltarText = "<<< Voltar";
+    //testPush
 
     return(
         <div className={style.artigo}>
