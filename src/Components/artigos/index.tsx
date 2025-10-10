@@ -3,7 +3,7 @@
 import style from "./style.module.css"
 //import saudeImg from "../../images/Artigos/SaudImg.jpg"
 import { Link } from "react-router-dom"
-import { segundoArtigo } from "../../pages/artigo"
+import { primeiroArtigo, segundoArtigo} from "../../pages/artigo"
 
 export function Artigos()
 {
@@ -12,9 +12,9 @@ export function Artigos()
             <h1>Artigos em Destaque</h1>
 
             <div className={style.cardsContainer}>
-                {/*<div className={style.card}>
+                <div className={style.card}>
                 
-                    <img src={saudeImg} alt="" />
+                    <img src={primeiroArtigo.imagem} alt="" />
 
                     <div className={style.cardContent}>
                         <h3>{ primeiroArtigo.tema }</h3>
@@ -22,9 +22,9 @@ export function Artigos()
                         <p>{ primeiroArtigo.texto_simplificado } </p>
                         <Link className={style.link} to="/artigo/tema_1"> Leia mais... </Link>
                     </div>
-                </div>*/}
+                </div>
 
-                <div className={style.card}>
+                {/*<div className={style.card}>
                     
                     <img src={segundoArtigo.imagem} alt="" />
 
@@ -34,7 +34,7 @@ export function Artigos()
                         <p>{ segundoArtigo.texto_simplificado }</p>
                         <Link className={style.link} to="/artigo/tema_2"> Leia mais... </Link>
                     </div>
-                </div>
+                </div>*/}
 
                 {/*<div className={style.card}>
                     

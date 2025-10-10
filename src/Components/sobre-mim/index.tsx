@@ -17,7 +17,7 @@ export function QuemSouEu()
             <div className={style.sobreMim}>
                 <h1>Quem sou eu?</h1>
                 <p>
-                    Sou Alan Duarte, possuo uma formação sólida em Pedagogia, Teologia, Pscicaálise e Pscicoterapia Junguiana. Minha paixão é ajudar pessoas a entender melhor a si mesmas e ao mundo ao seu redor, explorando, símbolos, arquétipos e processos inconscientes que moldam nossas vidas. Acredito que cada indivíduo tem o poder de se transformar e se autorrealizar, e estou aqui para apoiá-lo nessa jornada.
+                    Sou Alan Duarte, possuo formações sólidas em Pedagogia, Teologia, Psicanálise e Pscicoterapia Junguiana. Minha paixão é ajudar pessoas a entender melhor a si mesmas e ao mundo ao seu redor, explorando, símbolos, arquétipos e processos inconscientes que moldam nossas vidas. Acredito que cada indivíduo tem o poder de se transformar e se autorrealizar, e estou aqui para apoiá-lo nessa jornada.
                 </p>
             </div>
             
