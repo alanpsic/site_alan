@@ -3,7 +3,7 @@
 import style from "./style.module.css"
 //import saudeImg from "../../images/Artigos/SaudImg.jpg"
 import { Link } from "react-router-dom"
-import { primeiroArtigo} from "../../pages/artigo"
+import { primeiroArtigo, segundoArtigo} from "../../pages/artigo"
 
 export function Artigos()
 {
