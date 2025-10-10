@@ -1,24 +1,58 @@
 
 import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
 
 import primeiroArtigoImg from "../../images/Artigos/SaudeMentalDetail.png";
 import segundoArtigoImg from "../../images/Artigos/CaminhadaImg.png";
 import terceiroArtigoImg from "../../images/Artigos/SaudeMentalDetail.png";
+import { ArtigoContent } from "../artigoContent";
 
 interface ArtigoData
 {
     tema: string;
-    texto: string[];
+    texto: ReactNode;
     texto_simplificado: string;
     imagem: string
 }
 
 export const  primeiroArtigo = {
-    tema: "Saúde Mental",
-    texto: ["A saúde mental é o alicerce silencioso da nossa existência. Ela não se resume à ausência de doenças, mas à capacidade de lidar com emoções, enfrentar desafios,"],
+    tema: "Saúde mental e psicoterapia junguiana",
+    texto: 
+    (
+        <>
+            <p>1. Conceito de Saúde Mental segundo Jung </p>
+
+            <p>Na psicologia analítica de Carl Gustav Jung, saúde mental não é apenas a ausência de doença, mas sim um processo de individuação, ou seja, o desenvolvimento pleno da personalidade e integração dos diferentes aspectos do self.</p>
+            <p><b>Individuação:</b> Processo de integração consciente e inconsciente, buscando equilíbrio entre o ego, o self e os arquétipos.</p>
+            <p><b>Self:</b>Centro da psique que contém e regula todos os aspectos da personalidade.</p>
+            <p><b>Sombra:</b>Parte inconsciente da psique que contém conteúdos reprimidos; sua integração é essencial para a saúde mental.</p>
+            <p><b>Arquetípos:</b>Modelos universais presentes no inconsciente coletivo que influenciam comportamento, sonhos e sintomas psicológicos.</p>
+
+            <br /><br />
+
+            <p>2. Papel da Psicoterapia Junguiana na Saúde Mental</p>
+
+            <p>A psicoterapia junguiana visa ajudar o indivíduo a: Integrar conteúdos inconscientes (sonhos, fantasias, emoções reprimidas).</p>
+            <p>Desenvolver consciência do self e de sua autenticidade.</p>
+            <p>Restaurar equilíbrio interno entre os opostos psíquicos (ex.: razão x emoção, anima x animus).</p>
+            <p>Encontrar significado e propósito, promovendo bem-estar e resiliência emocional.</p>
+
+            <br /><br />
+
+            <p>3. Principais Técnicas e Ferramentas</p>
+
+            <p>* 1. Análise de sonhos:</p>
+            <p>Sonhos são mensagens do inconsciente.</p>
+            <p>Interpretar símbolos e arquétipos revela conflitos internos e caminhos de crescimento.</p>
+            <p>* 2. Atividade simbólica e imaginação ativa:</p>
+            <p>Técnica para dialogar com conteúdos inconscientes.</p>
+            <p>Ex.: imaginar conversas com figuras simbólicas do inconsciente para integração de aspectos reprimidos.</p>
+            <p>* 3. Trabalho com mitos e arquétipos:</p>
+
+        </>
+    ),
     texto_simplificado: "A saúde mental é o alicerce silencioso da nossa existência. Ela não se resume à ausência de doenças, mas à capacidade de lidar com emoções, enfrentar desafios,",
     imagem: primeiroArtigoImg
 };
@@ -72,27 +106,8 @@ export function Artigo()
     return (
         <div>
             <div className={style.head}><Link className={style.artigoLink} to="/">Home</Link></div>
-            <div className={style.artigo}>
-               
-                <div className={style.artigoImgMovel}>
-                    <img src={artigo?.imagem} alt="" />
-                </div>
 
-               <div className={style.artigoTxt}>
-                    <h1>{ artigo ? artigo.tema : ""}</h1>
-                    { artigo && artigo.texto.map((item, index)=>(
-                        <p key={index}>{item}</p>
-                    ))} 
-                    <div className={style.linkVoltar}><Link to="/">{voltarText}</Link></div>
-               </div>
-               
-                <div className={style.artigoImg}>
-                    <img src={artigo?.imagem} alt="" />
-                </div>
-                
-
-                
-            </div>
+            <ArtigoContent tema={artigo? artigo?.tema : ""} texto={artigo? artigo.texto : ""} imagem={artigo? artigo.imagem : ""} />
             
         </div>
     )

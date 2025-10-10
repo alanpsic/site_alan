@@ -1,0 +1,60 @@
+
+.container textarea
+{
+    resize:none;
+}
+
+.container .h1, .container .h2
+{
+    color:#5f9681;
+}
+
+.form
+{
+    width:50%;
+}
+
+
+
+.inputTemaContainer
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.inputTemaContainer label
+{
+    display:block;
+}
+
+.inputTema
+{
+    width:100%;
+    background-color:#fff;
+    border:1px solid #c3c3c3;
+    padding:8px;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+    outline:none;
+}
+
+.inputSubmmit
+{
+    color:#ffffff;
+    background-color:#5f9681;
+    border:none;
+    border-radius:4px;
+    padding:8px;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+}
+
+.inputSubmmit:hover
+{
+    background-color:#5f5681;
+}
+
+.preview
+{
+    text-align:center;
+}
